@@ -4,24 +4,25 @@
 # Fonksiyonların adlarını ve parametrelerini DEĞİŞTİRMEYİN; testler bu adlarla çalışır.
 # Kendi bilgisayarınızda denemek için:  cd hafta02  ve ardından  python -m pytest -v
 
-
 # 1. İşaret
 # Sayı 0'dan büyükse "pozitif", küçükse "negatif", 0 ise "sıfır" döndürün.
 # Örnek: isaret(5) -> "pozitif"
 def isaret(sayi):
-    if sayi > 0: 
-        return"Pozitif" 
+    if sayi > 0:
+        return "pozitif"
     elif sayi < 0:
-        return"Negatif"
-    else :
-        return "Sifir"   
+        return "negatif"
+    else:
+        return "sıfır"
+
 
 # 2. Dönem notu
 # Vizenin %40'ı ile finalin %60'ını toplayıp döndürün.
 # Örnek: donem_notu(50, 70) -> 62.0
 def donem_notu(vize, final):
-    ort = vize * 0.4 + final * 0.6 
+    ort = vize * 0.4 + final * 0.6
     return ort
+
 
 # 3. Harf sayma
 # `metin` içinde `harf` karakterinin kaç kez geçtiğini döndürün.
@@ -36,7 +37,8 @@ def harf_say(metin, harf):
 
 
 # 4. Faktöriyel
-# n! = 1 * 2 * 3 * ... * n değerini bir döngüyle hesaplayın. 0! = 1'dir.
+# n! = 1 * 2 * 3 * ... * n değerini bir döngüyle hesaplayın.
+# 0! = 1'dir.
 # Örnek: faktoriyel(5) -> 120
 def faktoriyel(n):
     sonuc = 1
@@ -46,15 +48,13 @@ def faktoriyel(n):
 
 
 # 5. Geçenler
-# Nottan 60 ve üzeri olanları, sıralarını bozmadan yeni bir liste olarak döndürün.
+# Notu 60 ve üzeri olanları, sıralarını bozmadan yeni bir liste olarak döndürün.
 # Örnek: gecenler([70, 45, 90]) -> [70, 90]
 def gecenler(notlar):
     gecenler_listesi = []
-    for notlar in notlar:
-        if notlar >= 60:
-            gecenler_listesi.append(notlar)
+
+    for not_degeri in notlar:
+        if not_degeri >= 60:
+            gecenler_listesi.append(not_degeri)
+
     return gecenler_listesi
-
-
-
-
